@@ -20,7 +20,7 @@ def score(y_true, y_pred):
 
 
 def kmeans_test(dataname, smart=False):
-  data = np.genfromtxt('{}.csv'.format(dataname), delimiter=',')
+  data = np.genfromtxt('data/{}.csv'.format(dataname), delimiter=',')
   X, y_true = data[:, :2], data[:, 2]
   n_clusters = int(np.max(y_true)) + 1
 
